@@ -15,7 +15,10 @@ int openFile(data_t *data)
 
 	fd_src = open(data->argv[1], O_RDONLY);
 
-	if (fstat(fd_src, &fileStat) == -1 || fd_src == -1 || !S_ISREG(fileStat.st_mode))
+	if (
+	    fstat(
+		fd_src, &fileStat) == -1 ||
+	    fd_src == -1 || !S_ISREG(fileStat.st_mode))
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", data->argv[1]);
 		exit(EXIT_FAILURE);
