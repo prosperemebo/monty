@@ -1,7 +1,5 @@
 #include "monty.h"
 
-void dataInit(data_t *data, char **argv);
-
 /**
  * main - monty interpreter
  * @argc: argument count

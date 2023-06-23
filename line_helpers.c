@@ -1,8 +1,5 @@
 #include "monty.h"
 
-int _getLine(data_t *data, int *size, int stream);
-int lineHelper(data_t *data, int rd, int i);
-
 /**
  * _getLine - read line from the stream
  * @data: data holder

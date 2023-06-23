@@ -28,6 +28,7 @@ typedef struct stack_s
 	struct stack_s *next;
 } stack_t;
 
+/*******data_struct***************/
 /**
  * struct data_t - struct holding program's data
  * @argv: argument vector
